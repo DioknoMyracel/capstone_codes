@@ -1,0 +1,220 @@
+/* Reset some default styles for the list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #001f3f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Reduced padding */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px; /* Reduced height */
+    z-index: 1; /* Set a higher z-index to bring it in front */
+}
+
+/* Style the navigation links */
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 0; /* Add margin-top to align with the navbar */
+}
+
+.navbar li {
+    margin-right: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Center the search bar horizontally */
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+/* Style the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px; /* Reduced padding */
+}
+
+.search-input {
+    border: none;
+    padding: 5px;
+    border-radius: 25px 0 0 25px;
+    width: 100%;
+}
+
+.search-button {
+    background-color: #E55807;
+    color: #fff;
+    border: none;
+    padding: 5px 20px; /* Reduced padding */
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+/* Style the "Get Started" button */
+.button {
+    display: inline-block;
+    padding: 8px 20px; /* Reduced padding */
+    background-color: #E55807;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+    transition: background-color 0.3s;
+    font-size: 16px; /* Reduced font size */
+}
+
+.button:hover {
+    background-color: #b14100;
+}
+
+/* Center-left align the sentences */
+.container {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/* Make "Simplify Sports Management" title bigger */
+.container h1 {
+    font-size: 48px;
+    margin-top: 200px;
+}
+
+/* Style the image container */
+.image-container {
+    position: fixed;
+    top: 90px; /* Adjusted position to lower it slightly */
+    right: 0;
+    z-index: -1; /* Place it behind other content */
+}
+
+/* Style the background image */
+.background-image {
+    max-width: 650px; /* Increased width to make it bigger */
+    height: auto;
+}
+
+/* Style the navigation menu */
+.navigation-menu {
+    background-color: #527AB9;
+    color: #fff;
+    padding: 20px 10px; /* Adjusted padding */
+    width: 200px; /* Set the width of the navigation menu */
+    position: fixed;
+    top: 50px; /* Adjusted top position to place it below the navbar */
+    left: 0;
+    height: 100%; /* Set the height to cover the entire viewport */
+}
+
+.navigation-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation-menu li {
+    margin-bottom: 20px; /* Adjusted margin for spacing between items */
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Center the navigation menu vertically */
+.navigation-menu ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 100%; /* Set the height to cover the entire menu */
+}
+
+.centered-box {
+    position: fixed;
+    top: 55%;
+    left: 58.5%;
+    height: 80%;
+    width: 78%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.centered-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.centered-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.centered-box a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #E55807;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.centered-box a:hover {
+    background-color: #b14100;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px; /* Adjust the spacing value as needed */
+}
+
+th, td {
+    padding: 10px; /* Add padding to cells */
+}
+
+.view-button {
+    background-color: #E55807;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from button */
+}
+
+.view-button:hover {
+    background-color: #b14100;
+}

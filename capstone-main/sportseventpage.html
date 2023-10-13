@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports ChAMP</title>
+    <link rel = "icon" type = "images/x-icon" href = "img/whistlelogo.png"/>
+    <link rel="stylesheet" type="text/css" href="sportseventpage.css">
+    <script src="https://kit.fontawesome.com/2091df493b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/logo.png" alt="Sports ChAMP Logo" width="200" height="auto">        
+        <div class="search-bar-container">
+            <form class="search-bar" method="get" >
+                <input type="text" class="search-input">
+                <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <ul>
+            <li >
+                <div class="user-dropdown">
+                    <button type="button" class="user-icon" onclick="open_panel()"><i class="fa-solid fa-circle-user"></i></button> 
+                    <div class="user-profile" id="sidepanel">
+                        <span onclick="close_panel()" style="font-size:30px;cursor:pointer;color: grey;" class="close_btn">&times;</span>
+                        <section class="profile-pic">
+                            <div class="picture"><i class="fa-solid fa-circle-user"></i><i class="fa-solid fa-camera"></i></div>
+                            <span class="username"><p>username</p><i class="fa-solid fa-pencil"></i></span>
+                        </section>
+                        <section class="user-info">
+                            <ul>
+                                <li>First Name <i class="fa-solid fa-pencil"></i></li>
+                                <li>Last Name<i class="fa-solid fa-pencil"></i></li>
+                                <li>Address<i class="fa-solid fa-pencil"></i></li>
+                                <li>Contact Number<i class="fa-solid fa-pencil"></i></li>
+                                <li>Email<i class="fa-solid fa-pencil"></i></li>
+                                <li>User Type<i class="fa-solid fa-pencil"></i></li>
+                            </ul>
+                        <button type="button" class="logout-button">Log out</button>
+
+                        </section>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="navigation-menu">
+            <ul>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Sports Events</a></li>
+                <li><a href="#">Game Results</a></li>
+                <li><a href="reportspage.html">Reports</a></li>
+                <li><a href="settingspage.html">Settings</a></li>
+            </ul>
+        </div>        
+    </div>
+
+    <div class="image-container">
+        <img src="img/design.png" alt="Background Image" class="background-image">
+    </div>
+
+    <div class="centered-box">
+        <h2>Your Events</h2>
+        <div class="date-box">
+            <div class="date">
+                <h3>October 4, 2023</h3>
+                <div class="dropdown-menu">
+                    <button type="button" class="menu-button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <div class="menu-window">
+                        <ul>
+                            <li>Archive</li>
+                            <li>Delete</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <h3>Sports Event Name</h3>
+                <p>Short Description.</p>
+            </div>
+        </div>
+        <div class="add-sports-event">
+            <div class="sport-event" id="sport-event">
+                <a href="#" class="sport-add">Sports Event</a>
+            </div>
+            <button type="button" class="open-add" id="open-add" onclick="open_sport()"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="close-add" id="close-add" onclick="close_sport()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

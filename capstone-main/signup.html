@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports ChAMP</title>
+    <link rel = "icon" type = "images/x-icon" href = "img/whistlelogo.png"/>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <script src="https://kit.fontawesome.com/2091df493b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/logo.png" alt="Sports ChAMP Logo" width="200" height="auto">        
+        
+        <div class="search-bar-container">
+            <form class="search-bar" method="get" >
+                <input type="text" class="search-input">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div><ul>
+            <li><a href="login.html" class="button">Login</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div class="container">
+            <div class="signup-form-container">
+                <form class="signup-form">
+                    <h2>Sign Up</h2>
+                    <div class="form-columns">
+                        <div class="form-column">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" class="signup-input"required>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" class="signup-input"required>
+                            <label for="address">Address</label>
+                            <input type="text" id="address" class="signup-input"required>
+                            <label for="contact-number">Contact Number</label>
+                            <input type="tel" id="contact-number" class="signup-input" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="signup-input"required>
+                        </div>
+                        <div class="form-column">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" class="signup-input"required>
+                            <label for="user-type">User Type</label>
+                            <select id="user-type" class="signup-input" required style="font-family: 'Poppins'; font-size: 12px; padding-right: 15px;">
+                                <option value="" disabled selected>Select User Type</option>
+                                <option value="coordinator">Sports Coordinator</option>
+                                <option value="player">Player/Participant</option>
+                                <option value="committee">Game Official/Committee</option>
+                            </select>
+                            <label for="password">Password</label>
+                            <input type="password" class="signup-input" required>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" class="signup-input" required>
+                            <label><input type="checkbox" required> I agree to the terms and conditions</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="signup-button">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Background image container -->
+    <div class="image-container">
+        <img src="img/design.png" alt="Background Image" class="background-image">
+    </div>
+</body>
+</html>
