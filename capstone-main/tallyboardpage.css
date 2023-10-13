@@ -108,8 +108,8 @@ ul {
     background: rgb(82, 122, 185);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     color: #fff;
-    padding: 20px 10px;
-    width: 20%;
+    padding: 10px 40px;
+    width: 15.6%;
     position: fixed;
     top: 70px;
     left: 0;
@@ -119,11 +119,15 @@ ul {
 .navigation-menu ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 100%;
+    transition: border-bottom 2s;
 }
 
 .navigation-menu li {
-    margin-bottom: 20px;
-    margin-right: 30px;
+    padding: 5px 10px;
 }
 
 .navigation-menu a {
@@ -131,18 +135,6 @@ ul {
     color: #fff;
     font-weight: bold;
     font-size: 20px;
-}
-
-.navigation-menu ul {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    margin-top: 30px;
-    height: 100%;
-    transition: border-bottom 2s;
-}
-.navigation-menu ul li:hover{
-    border-bottom: 1px solid white  ;
 }
 
 .centered-box {

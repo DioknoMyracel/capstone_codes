@@ -4,19 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports ChAMP</title>
+    <link rel = "icon" type = "images/x-icon" href = "img/whistlelogo.png"/>
     <link rel="stylesheet" type="text/css" href="gameresultpage.css">
+    <script src="https://kit.fontawesome.com/2091df493b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="navbar">
         <img src="img/logo.png" alt="Sports ChAMP Logo" width="200" height="auto">        
-        <ul>
-            <li class="search-bar-container">
-                <div class="search-bar">
-                    <input type="text" class="search-input" placeholder="Search for Events">
-                    <button class="search-button">Search</button>
+        
+        <div class="search-bar-container">
+            <form class="search-bar" method="get" >
+                <input type="text" class="search-input">
+                <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div><ul>
+            <li>
+                <div class="user-dropdown">
+                    <button type="button" class="user-icon" onclick="open_panel()"><i class="fa-solid fa-circle-user"></i></button> 
+                    <div class="user-profile" id="sidepanel">
+                        <span onclick="close_panel()" style="font-size:30px;cursor:pointer;color: grey;" class="close_btn">&times;</span>
+                        <section class="profile-pic">
+                            <div class="picture"><i class="fa-solid fa-circle-user"></i><i class="fa-solid fa-camera"></i></div>
+                            <span class="username"><p>username</p><i class="fa-solid fa-pencil"></i></span>
+                        </section>
+                        <section class="user-info">
+                            <ul>
+                                <li>First Name <i class="fa-solid fa-pencil"></i></li>
+                                <li>Last Name<i class="fa-solid fa-pencil"></i></li>
+                                <li>Address<i class="fa-solid fa-pencil"></i></li>
+                                <li>Contact Number<i class="fa-solid fa-pencil"></i></li>
+                                <li>Email<i class="fa-solid fa-pencil"></i></li>
+                                <li>User Type<i class="fa-solid fa-pencil"></i></li>
+                            </ul>
+                        <button type="button" class="logout-button">Log out</button>
+
+                        </section>
+                    </div>
                 </div>
             </li>
-            <li><a href="#" class="button">Sign Up</a></li>
         </ul>
     </div>
 
@@ -25,10 +54,10 @@
             <ul>
                 <li><a href="#">Registration</a></li>
                 <li><a href="#">Schedule</a></li>
-                <li><a href="#">Sports Events</a></li>
-                <li><a href="#">Game Results</a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Settings</a></li>
+                <li><a href="sportseventpage.html">Sports Events</a></li>
+                <li id="active"><a href="#">Game Results</a></li>
+                <li><a href="reportspage.html">Reports</a></li>
+                <li><a href="settingspage.html">Settings</a></li>
             </ul>
         </div>        
     </div>
